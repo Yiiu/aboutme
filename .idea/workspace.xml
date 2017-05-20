@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893e832a-ab3c-45c4-9c75-4e0ab2015ff5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/Info.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/Project.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/next.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.nojekyll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/0.nuxt.bundle.2852c4ae111c39eb5e63.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/1.nuxt.bundle.72a0176e4442c482dc62.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.a13d9c117ed8a0c383c9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/nuxt.bundle.c8855af260dd115c076d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/server-bundle.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/_nuxt/vendor.bundle.a13d9c117ed8a0c383c9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,8 +86,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -279,12 +285,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495254562722</updated>
       <workItem from="1495254564131" duration="2474000" />
-      <workItem from="1495257659619" duration="13674000" />
+      <workItem from="1495257659619" duration="13767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16148000" />
+    <option name="totallyTimeSpent" value="16241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="408" y="165" width="1868" height="603" extended-state="0" />
@@ -464,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
