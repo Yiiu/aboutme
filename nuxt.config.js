@@ -2,7 +2,10 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  head: {
+    css: [
+        { src: '~assets/main.less', lang: 'less' }
+    ],
+    head: {
     title: 'Yiiu',
     meta: [
       { charset: 'utf-8' },

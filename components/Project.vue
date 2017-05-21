@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section class="container project" :class="{start: start}">
         <h1 class="title">Project</h1>
         <section class="project-item">
             <div v-for="(item, index) in project">
@@ -15,6 +15,7 @@
 </template>
 <script>
     export default {
+        props: ['start'],
         data () {
             return {
                 project: [
@@ -48,66 +49,86 @@
     }
 </script>
 <style lang="less">
-h1.title {
-    position: absolute;
-    top: 120px;
-    font-size: 2.4em;
-    font-weight: 400;
-}
-.project-item {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    max-width: 1230px;
-    width:100%;
-    >div {
+.container.project {
+    h1.title {
+        position: absolute;
+        top: 120px;
+        font-size: 2.4em;
+        font-weight: 400;
+        transition: 1.3s all cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: .1s;
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+    .project-item {
         display: flex;
-        margin-right: 10px;
-        flex-wrap: wrap;
-        @media screen and (max-width: 1230px) {
-            margin-right: 10px !important;
-            margin-left: 10px;
-            margin-bottom: 10px;
+        justify-content: center;
+        flex-flow: wrap;
+        max-width: 1230px;
+        width:100%;
+        >div {
+            display: flex;
+            margin-right: 10px;
+            flex-wrap: wrap;
+            @media screen and (max-width: 1230px) {
+                margin-right: 10px !important;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            @media screen and (max-width: 630px) {
+                .list {
+                    margin-left: 10px;
+                    margin-right: 10px !important;
+                    &:first-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
             &:last-child {
                 margin-right: 0;
             }
-        }
-        @media screen and (max-width: 630px) {
+            a {
+                color: #000;
+                text-decoration: none;
+            }
             .list {
-                margin-left: 10px;
-                margin-right: 10px !important;
-                &:first-child {
-                    margin-bottom: 10px;
+                width: 300px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                border: 1px solid #d8d8d8;
+                border-radius: 1px;
+                padding: 24px;
+                margin-right: 10px;
+                flex-basis: 300px;
+                transition: .3s border;
+                h2.name {
+                    margin-bottom: 12px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    border-color: #000;
                 }
             }
         }
-        &:last-child {
-            margin-right: 0;
-        }
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-        .list {
-            width: 300px;
-            flex-grow: 1;
-            flex-shrink: 0;
-            border: 1px solid #d8d8d8;
-            border-radius: 1px;
-            padding: 24px;
-            margin-right: 10px;
-            flex-basis: 300px;
-            transition: .3s border;
-            h2.name {
-                margin-bottom: 12px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-            &:hover {
-                border-color: #000;
-            }
-        }
+        transition: 1.3s all cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: .4s;
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+.container.project.start {
+    h1.title {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    .project-item {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 </style>
